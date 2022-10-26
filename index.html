@@ -4,25 +4,43 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <title>What's For Dinner?</title>
 </head>
 <body>
-    <h1>What's For Dinner?</h1>
-    <form id="getDish">
-        <h1>What are you looking for?</h1>
-        <input type="radio" name="meal" id="side" value="Side">
-        <label for="side">Side</label>
-        <input type="radio" name="meal" id="main" value="Main">
-        <label for="main">Main Dish</label>
-        <input type="radio" name="meal" id="dessert" value="Dessert">
-        <label for="dessert">Dessert</label>
-        <input type="radio" name="meal" id="entire" value="Entire">
-        <label for="entire">Entire Meal</label>
-        <button type="submit">LET'S COOK!</button>
-    </form>
-    <div class="return-area">
-
-    </div>
+    <header class="header">
+        <h1 class="header-title">What's For Dinner?</h1>
+        <button class="header-button">ADD A RECIPE</button>
+    </header>
+    <section class="main">
+        <form id="getDish" class="form">
+            <h2 class="form-title">What are you looking for?</h2>
+            <div class="form-option">
+                <input type="radio" name="meal" id="side" value="Side">
+                <label for="side">Side</label>
+            </div>
+            <div class="form-option">
+                <input type="radio" name="meal" id="main" value="Main">
+                <label for="main">Main Dish</label>
+            </div>
+            <div class="form-option">
+                <input type="radio" name="meal" id="dessert" value="Dessert">
+                <label for="dessert">Dessert</label>
+            </div>
+            <div class="form-option">
+                <input type="radio" name="meal" id="entire" value="Entire">
+                <label for="entire">Entire Meal</label>
+            </div>
+            <button type="submit">LET'S COOK!</button>
+        </form>
+        <div class="cook-area">
+            <div class="return-area">
+                <img class="placeholder" src="./assets/cookpot.svg"/>
+            </div>
+        </div>
+    </section>
+    
     <script src="./scripts.js"></script>
 </body>
 </html>
